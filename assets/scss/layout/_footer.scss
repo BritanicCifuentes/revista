@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer p {
+    font-size: 12px;
+    @include respond-to ($bp-md) {
+        font-size: 12px;
+    }
+}

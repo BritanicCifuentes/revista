@@ -1,0 +1,11 @@
+.input-menu {
+    border-radius: 30px;
+    width: 75px;
+    height: 18px;
+    font-size: 12px;
+    @include respond-to ($bp-md) {
+        width: 250px;
+        height: 25px;
+        font-size: 12px;
+    }
+}

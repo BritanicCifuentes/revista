@@ -1,0 +1,48 @@
+.nav {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+
+.nav__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    @include respond-to ($bp-md) {
+        font-size: 24px;
+    }
+}
+
+.nav__div {
+    width: 100%;
+    text-align: right;
+}
+
+.nav__menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    @include respond-to ($bp-md) {
+        width: 100%;
+    }
+    li {
+        display: inline-block;
+        .nosotros {
+            display: none;
+            @include respond-to ($bp-md) {
+                display: inline-block;
+            }
+        }
+        .contacto {
+            font-size: 12px;
+            @include respond-to ($bp-md) {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
